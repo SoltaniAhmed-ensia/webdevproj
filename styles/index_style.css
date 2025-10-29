@@ -15,36 +15,84 @@
                 height: 100%;
                 opacity: 0.90;
             }
-            .upper{
-                background-color: rgb(27, 27, 27);
-                /* text-align: center; */
-                color: rgb(206, 189, 189);
-                /* font-size:70px; */
-                border: none;
-                margin-top:0%;
-                margin-bottom: 0px;
-                width: 95.7vw;
-                height: 10vh;
-                padding: 1%;
-                flex-wrap: nowrap;
-            }
-            .login_signup{
+            .upper {
+    display: grid;
+    grid-template-columns: 6% 6% auto 190px; /* Logo | Title+Nav | Buttons */
+    align-items: center;
+    background-color: rgb(27, 27, 27);
+    color: rgb(206, 189, 189);
+    width: 95.7vw;
+    height: 10vh;
+    padding: 0 2%;
+    gap: 1rem; 
+    background-color: rgb(27, 27, 27);
+    /* text-align: center; */
+    color: rgb(255, 255, 255);
+    /* font-size:70px; */
+    border: none;
+    margin-top:0%;
+    margin-bottom: 0px;
+    width: 95.7vw;
+    height: 10vh;
+    padding: 1%;
+    padding-top: 0%;
+    padding-bottom: 3%;
+    flex-wrap: nowrap;
+}
 
+.logo {
+  width: 6vmax; /* will scale according to grid column */
+  height: auto;
+  margin-top: 0%;
+
+
+}
+
+.title_nav {
+    margin-top: 0%;
+    padding-top: 0%;
+}
+
+.title_nav h1 {
+    padding-top: 0;
+    color: white;
+    margin-top:0%;
+}
+
+.href1 {
+    margin-top: 3%;
+    margin-left: 40%;
+    display: flex;
+    gap: 20%; /* spacing between links */
+    width: 10%;
+    text-align: center;
+    padding: 10px;
+    padding-top: 1%;
+    margin-bottom: 10%;
+    flex-wrap: nowrap;
+}
+
+
+            .login_signup{
                 border: 3px  black;
-                width: 190px;
-                height: 80px;
+                width: 15vmax;
+                height: 80%;
                 display: inline;
-                position: absolute;
                 top: 5%;
                 left: 80%;
                 padding-top: 0px;
+                margin-top: 10%;
+                display: flex;
+                 gap: 10%;
+                justify-content: flex-end;
             }
             .button1{
-                width: 80px;
-                height: 30px;
+                width: 45%;
+                height: 40%;
                 background-color: black;
                 border-radius: 12%;
                 color:  white;
+                margin-right: 1%;
             }
             .button1:focus{
                 background-color: gray;
@@ -53,9 +101,10 @@
                 background-color:gray;
             }
 
-            .button2{
-               width: 80px;
-                height: 30px;
+           .button2{
+                display: inline-block;
+                width: 45%;
+                height: 40%;
                 background-color: black;
                 border-radius: 12%;
                 color:  white;
@@ -175,16 +224,6 @@
                 .div1{
                     flex: 1 1 calc(20%);
                 }
-            }
-            .href1{
-                margin-top: 0%;
-                width: 10%;
-                text-align: center;
-                margin-left: 300px;
-                padding: 10px;
-                padding-top: 1%;
-                margin-bottom: 10%;
-    
             }
             .div_browse1{
             margin-left: 500px;
@@ -540,12 +579,12 @@
     height: auto;
   }
 
-  .login_signup {
+  /* .login_signup {
     position: static;
     margin: 10px auto;
     display: flex;
     justify-content: center;
-  }
+  } */
 
   .title1 {
     font-size: 55px;
